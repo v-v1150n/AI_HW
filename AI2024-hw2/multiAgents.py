@@ -75,7 +75,25 @@ class ReflexAgent(Agent):
         newScaredTimes = [ghostState.scaredTimer for ghostState in newGhostStates]
 
         "*** YOUR CODE HERE ***"
-        return successorGameState.getScore()
+            # Initialize evaluation score
+        evalScore = successorGameState.getScore()
+
+        # Calculate distances to food and ghosts
+        foodDistances = [manhattanDistance(newPos, foodPos) for foodPos in newFood.asList()]
+        closestFoodDist = min(foodDistances) if foodDistances else 0
+        ghostDistances = [manhattanDistance(newPos, ghost.getPosition()) for ghost in newGhostStates]
+
+        # Incorporate food and ghost distances into evaluation score
+        if closestFoodDist > 0:
+            evalScore += 1.0 / closestFoodDist  # Encourage getting closer to food
+        if ghostDistances and min(ghostDistances) < 5:
+            evalScore -= 1000  # Avoid ghosts if too close
+        if min(ghostDistances) > 10:  # Safe distance from ghosts
+            evalScore += 50
+
+        return evalScore
+
+        #return successorGameState.getScore()
 
 def scoreEvaluationFunction(currentGameState: GameState):
     """
@@ -108,36 +126,50 @@ class MultiAgentSearchAgent(Agent):
         self.depth = int(depth)
 
 class MinimaxAgent(MultiAgentSearchAgent):
-    """
-    Your minimax agent (question 2)
-    """
-
     def getAction(self, gameState: GameState):
         """
         Returns the minimax action from the current gameState using self.depth
         and self.evaluationFunction.
-
-        Here are some method calls that might be useful when implementing minimax.
-
-        gameState.getLegalActions(agentIndex):
-        Returns a list of legal actions for an agent
-        agentIndex=0 means Pacman, ghosts are >= 1
-
-        gameState.generateSuccessor(agentIndex, action):
-        Returns the successor game state after an agent takes an action
-
-        gameState.getNumAgents():
-        Returns the total number of agents in the game
-
-        gameState.isWin():
-        Returns whether or not the game state is a winning state
-
-        gameState.isLose():
-        Returns whether or not the game state is a losing state
         """
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()       
+        PACMAN = 0
 
+        def pacman_agent(state, depth):
+            if state.isWin() or state.isLose() or depth == 0:
+                return self.evaluationFunction(state)  # Evaluate leaf nodes
+
+            actions = state.getLegalActions(PACMAN)
+            best_score = float("-inf")
+            best_action = Directions.STOP
+
+            for action in actions:
+                score = ghost_agent(state.generateSuccessor(PACMAN, action), depth, 1)
+                if score > best_score:
+                    best_score = score
+                    best_action = action
+            return best_action if depth == self.depth else best_score
+
+        def ghost_agent(state, depth, ghost):
+            if state.isWin() or state.isLose():
+                return self.evaluationFunction(state)  # Evaluate leaf nodes
+
+            next_ghost = ghost + 1
+            if ghost == state.getNumAgents() - 1:
+                next_ghost = PACMAN
+
+            actions = state.getLegalActions(ghost)
+            best_score = float("inf")
+
+            for action in actions:
+                if next_ghost == PACMAN:
+                    score = pacman_agent(state.generateSuccessor(ghost, action), depth - 1) #back to pacman round
+                else:
+                    score = ghost_agent(state.generateSuccessor(ghost, action), depth, next_ghost)
+                if score < best_score:
+                    best_score = score
+            return best_score
+
+        return pacman_agent(gameState, self.depth)
+    
 class AlphaBetaAgent(MultiAgentSearchAgent):
     """
     Your minimax agent with alpha-beta pruning (question 3)
@@ -148,8 +180,48 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
           Returns the minimax action using self.depth and self.evaluationFunction
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        def max_value(state, alpha, beta, depth):
+            if state.isWin() or state.isLose() or depth == 0:
+                return self.evaluationFunction(state), None
 
+            value = float("-inf")
+            best_action = None
+
+            for action in state.getLegalActions(0):  # 0 for Pacman
+                successor = state.generateSuccessor(0, action)
+                score, _ = min_value(successor, alpha, beta, depth, 1)  # Minimize for ghosts
+                if score > value:
+                    value = score
+                    best_action = action
+                if value > beta:
+                    return value, best_action
+                alpha = max(alpha, value)
+            return value, best_action
+
+        def min_value(state, alpha, beta, depth, agent_index):
+            if state.isWin() or state.isLose():
+                return self.evaluationFunction(state), None
+
+            value = float("inf")
+            ghost_best_action = None
+
+            for action in state.getLegalActions(agent_index):
+                successor = state.generateSuccessor(agent_index, action)
+                if agent_index == state.getNumAgents() - 1:
+                    score, _ = max_value(successor, alpha, beta, depth - 1)  # Maximize for Pacman
+                else:
+                    score, _ = min_value(successor, alpha, beta, depth, agent_index + 1)
+                if score < value:
+                    value = score
+                    best_action = action
+                if value < alpha:
+                    return value, best_action
+                beta = min(beta, value)
+            return value, best_action
+
+        _, best_action = max_value(gameState, float("-inf"), float("inf"), self.depth) #float("-inf") & float("inf"):alpha , beta 
+        return best_action
+    
 class ExpectimaxAgent(MultiAgentSearchAgent):
     """
       Your expectimax agent (question 4)
