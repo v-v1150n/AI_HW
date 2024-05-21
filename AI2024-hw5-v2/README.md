@@ -56,4 +56,4 @@ pip install -r requirements.txt
 
 ## Evaluation Video
 
-![evalution video](pacmam.png)
+![evalution video](pacman.png)
