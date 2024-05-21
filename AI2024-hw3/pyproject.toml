@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ai2024-hw3"
+version = "0.1.0"
+description = ""
+authors = ["hw3"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pycosat = "^0.6.6"
+pysat = "^3.2.0"
+python-sat = "^1.8.dev12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
