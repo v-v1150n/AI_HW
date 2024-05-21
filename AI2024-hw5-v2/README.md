@@ -50,3 +50,7 @@ pip install -r requirements.txt
 2. **Output**:
     - The evaluation script will print the score of the agent.
 
+## Training Curve
+
+Include plots of your training curve showing both loss and rewards.
+![training curve](submissions/ALE-MsPacman-v5__pacman__1716040330/training_progress.png)
