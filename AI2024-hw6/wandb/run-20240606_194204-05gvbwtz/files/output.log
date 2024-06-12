@@ -1,0 +1,135 @@
+Using cuda device
+==((====))==  Unsloth: Fast Llama patching release 2024.5
+   \\   /|    GPU: NVIDIA RTX A6000. Max memory: 47.528 GB. Platform = Linux.
+O^O/ \_/ \    Pytorch: 2.3.0+cu121. CUDA = 8.6. CUDA Toolkit = 12.1.
+\        /    Bfloat16 = TRUE. Xformers = 0.0.26.post1. FA = False.
+ "-____-"     Free Apache license: http://github.com/unslothai/unsloth
+=============Generated Answer After Fine-tuning=============
+Question 1:
+How many colors are traditionally recognized in a visible spectrum or optical rainbow?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+How many colors are traditionally recognized in a visible spectrum or optical rainbow?
+### Response:
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+  0%|                                                                                                                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+ 10%|████████████████▊                                                                                                                                                       | 1/10 [06:51<1:01:47, 411.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+The answer is 7.<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 2:
+In a basket, there are 20 oranges, 60 apples, and 40 bananas. If 15 pears were added, and half of the oranges were removed, what would be the new ratio of oranges to apples, bananas, and pears combined within the basket?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+In a basket, there are 20 oranges, 60 apples, and 40 bananas. If 15 pears were added, and half of the oranges were removed, what would be the new ratio of oranges to apples, bananas, and pears combined within the basket?
+### Response:
+The new ratio of oranges to apples, bananas, and pears combined within the basket is
+The new ratio of oranges to apples, bananas, and pears combined within the basket is 10:60:15:5.
+<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 3:
+If you were a car salesperson, how would you convince a potential buyer to purchase an electric vehicle?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+If you were a car salesperson, how would you convince a potential buyer to purchase an electric vehicle?
+### Response:
+
+I would point out that electric vehicles are more environmentally friendly than gasoline-powered cars. They emit less carbon dioxide and other pollutants, and they don't rely on fossil fuels. Additionally, electric vehicles are generally more efficient than gasoline-powered cars, so they can save the buyer money on fuel costs. Finally, electric vehicles are often more reliable and have fewer maintenance costs than gasoline-powered cars, so they can save the buyer money in the long
+I would point out that electric vehicles are more environmentally friendly than gasoline-powered cars. They emit less carbon dioxide and other pollutants, and they don't rely on fossil fuels. Additionally, electric vehicles are generally more efficient than gasoline-powered cars, so they can save the buyer money on fuel costs. Finally, electric vehicles are often more reliable and have fewer maintenance costs than gasoline-powered cars, so they can save the buyer money in the long run.<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 4:
+Break down the process of photosynthesis into a bullet-pointed list, detailing each stage and the overall purpose of the process in sustaining life on Earth.
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+Break down the process of photosynthesis into a bullet-pointed list, detailing each stage and the overall purpose of the process in sustaining life on Earth.
+### Response:
+Photosynthesis is a process that converts light energy into chemical energy. It occurs in plants and algae, and is essential for sustaining life on Earth.
+1. Plants use chlorophyll to absorb sunlight and convert it into chemical energy. This process is called photosynthesis.
+2. During photosynthesis, plants take in carbon dioxide from the air and water from the soil. They use this energy to produce glucose, a simple sugar that serves as the plant's food source.
+3. The glucose produced during photosynthesis is stored in the plant's leaves and stems. This stored energy is used by the plant for growth and reproduction.
+4. Photosynthesis is a vital process for all living organisms, as it provides the energy that sustains life on Earth. Without photosynthesis, plants would not be able to grow and reproduce, and animals would not have a source of food.
+5. In addition to providing
+5. In addition to providing energy for growth and reproduction, photosynthesis also produces oxygen, which is essential for the survival of all living organisms.<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 5:
+Explain why college students should get a library card.
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+Explain why college students should get a library card.
+### Response:
+
+A library card is a free way to access a wide variety of books, magazines, and other resources. It also gives you access to online databases and other resources that are not available to the public. Additionally, having a library card can help you save money on
+A library card is a free way to access a wide variety of books, magazines, and other resources. It also gives you access to online databases and other resources that are not available to the public. Additionally, having a library card can help you save money on textbooks and other materials that you might need for your classes. Finally, having a library card can help you connect with other students and faculty members who may be able to provide you with valuable advice and guidance.<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 6:
+What popular toy was invented in 1943 by Richard James, an engineer who accidentally knocked a torsion spring off his workbench?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+What popular toy was invented in 1943 by Richard James, an engineer who accidentally knocked a torsion spring off his workbench?
+### Response:
+I'm not sure what you're asking, but it sounds like you want me to answer a question about a toy that was invented in 1943 by an engineer named Richard James.
+### Output:
+I'm not sure what
+I'm not sure what you're asking, but it sounds like you want me to answer a question about a toy that was invented in 1943 by an engineer named Richard James.
+<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 7:
+Which famous movie prop designs have become iconic symbols in film history?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+Which famous movie prop designs have become iconic symbols in film history?
+### Response:
+I can provide you with some examples of famous movie prop designs that have become iconic symbols in film history.
+### Output:
+* The lightsaber from Star Wars
+* The "Rosebud" sled from Citizen Kane
+* The "One Ring" from The Lord of the Rings
+* The "Golden Ticket" from Willy Wonka & the Chocolate Factory
+* The
+I can provide you with some examples of famous movie prop designs that have become iconic symbols in film history.
+I can provide you with some examples of famous movie prop designs that have become iconic symbols in film history.
+* The "Batmobile" from Batmanxamples of famous movie prop designs that have become iconic symbols in film history.
+* The "Batmobile" from Batmanxamples of famous movie prop designs that have become iconic symbols in film history.
+* The "Batmobile" from Batmanxamples of famous movie prop designs that have become iconic symbols in film history.
+* The "Batmobile" from Batmanxamples of famous movie prop designs that have become iconic symbols in film history.
+* The "DeLorean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+* The "DeLorean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+* The "DeLorean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+* The "DeLorean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+ 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                  | 8/10 [07:57<00:49, 24.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+ 90%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                 | 9/10 [08:00<00:17, 17.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [08:01<00:00, 48.16s/it]
+### Input:orean" from Back to the Futurefamous movie prop designs that have become iconic symbols in film history.

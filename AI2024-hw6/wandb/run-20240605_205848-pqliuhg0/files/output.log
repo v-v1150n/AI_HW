@@ -1,0 +1,10 @@
+
+Using cuda device
+/home/vv1150n/miniconda3/envs/ai_hw6/lib/python3.10/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/vv1150n/python_file/AI2024-hw6/main.py", line 80, in <module>
+    DPO.DPO_train(args, output_dir)
+  File "/home/vv1150n/python_file/AI2024-hw6/DPO.py", line 72, in DPO_train
+    model=model,
+UnboundLocalError: local variable 'model' referenced before assignment

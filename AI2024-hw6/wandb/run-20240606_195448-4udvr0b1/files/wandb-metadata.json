@@ -1,0 +1,148 @@
+{
+    "os": "Linux-6.1.0-1026-oem-x86_64-with-glibc2.35",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-06-06T11:54:49.188362",
+    "startedAt": "2024-06-06T11:54:48.543583",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_name",
+        "unsloth/mistral-7b-v0.3-bnb-4bit",
+        "--inference_base_model",
+        "--wandb_token",
+        "e3fff50ea094a01b2517ed5ab652f25906a498f0"
+    ],
+    "state": "running",
+    "program": "/home/vv1150n/python_file/AI2024-hw6/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "host": "cmdm-196",
+    "username": "vv1150n",
+    "executable": "/home/vv1150n/miniconda3/envs/ai_hw6/bin/python",
+    "cpu_count": 14,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2144.3147,
+        "min": 800.0,
+        "max": 4480.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4701.707,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4686.53,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4675.595,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4179.845,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4698.973,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4700.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4640.812,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2561.528,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2665.577,
+            "min": 800.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2114.244,
+            "min": 800.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2382.054,
+            "min": 800.0,
+            "max": 3700.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3700.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3700.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3032.874,
+            "min": 800.0,
+            "max": 3700.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3700.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 455.7536849975586,
+            "used": 198.83881759643555
+        }
+    },
+    "gpu": "NVIDIA RTX A6000",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 51527024640
+        }
+    ],
+    "memory": {
+        "total": 15.308425903320312
+    }
+}

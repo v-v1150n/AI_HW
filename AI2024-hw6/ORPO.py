@@ -10,6 +10,7 @@ from transformers import TextStreamer
 from unsloth import FastLanguageModel
 from trl import ORPOConfig, ORPOTrainer
 from unsloth import is_bfloat16_supported
+# max_seq_length = 4096 # Supports RoPE Scaling interally, so choose any!
 
 
 
@@ -26,7 +27,19 @@ def ORPO_train(args, output_dir):
 
     # Model
     # model, tokenizer = FastLanguageModel.from_pretrained(args.model_name,...)
-    utils.YOUR_CODE_HERE
+    model, tokenizer = FastLanguageModel.from_pretrained(
+        # model_name = 'unsloth/mistral-7b-v0.3-bnb-4bit',
+        # model_name = 'unsloth/llama-3-8b-bnb-4bit',
+        model_name = "unsloth/llama-3-8b-Instruct-bnb-4bit",
+        max_seq_length = 4096, #0609-1
+        dtype = None,
+        # dtype = torch.float16, #0609-2
+        load_in_4bit = True,
+        # token = "hf_...", # use one if using gated models like meta-llama/Llama-2-7b-hf
+    )
+
+    #max_seq_length =2048 過長的序列會增加計算成本，但過短的序列可能會丟失重要的上下文信息。
+    #dtype = torch.float16 使用浮點16位或 BF16 來提高計算效率並減少內存使用。
 
     # Load dataset
     # ================================DO NOT CHANGE!================================
@@ -41,7 +54,28 @@ def ORPO_train(args, output_dir):
 
     # Perform model patching and add fast LoRA weights
     # model = FastLanguageModel.get_peft_model(model,...)
-    utils.YOUR_CODE_HERE
+    model = FastLanguageModel.get_peft_model(
+        model,
+        # r = 16, # Choose any number > 0 ! Suggested 8, 16, 32, 64, 128
+        r = 64, #0609-1
+        target_modules = ["q_proj", "k_proj", "v_proj", "o_proj",
+                        "gate_proj", "up_proj", "down_proj",],
+        # lora_alpha = 16,
+        lora_alpha = 64, #0609-1
+        # lora_dropout = 0, # Supports any, but = 0 is optimized
+        lora_dropout = 0.1, #0609-1
+        bias = "none",    # Supports any, but = "none" is optimized
+        # [NEW] "unsloth" uses 30% less VRAM, fits 2x larger batch sizes!
+        use_gradient_checkpointing = "unsloth", # True or "unsloth" for very long context
+        random_state = 3407,
+        use_rslora = False,  # We support rank stabilized LoRA
+        loftq_config = None, # And LoftQ
+    )
+
+    #r = 64 調高可以提升模型的靈活性，讓模型能夠捕捉到更細微的特徵，但也會使訓練和推理變得更慢。
+    #lora_alpha=64 較高的 lora_alpha 會增加 LoRA 層的影響，從而可能提升性能，但也會使模型更加敏感於過擬合。
+    #lora_dropout = 0.1 如果出現過擬合問題，可以考慮增大 lora_dropout 的值，例如設為 0.1 或 0.2。
+
 
     # Training arguments
     training_args = ORPOConfig(
@@ -75,8 +109,8 @@ def ORPO_train(args, output_dir):
     orpo_trainer = ORPOTrainer(
         model=model,
         tokenizer=tokenizer,
-        train_dataset=utils.YOUR_CODE_HERE,
-        eval_dataset=utils.YOUR_CODE_HERE,
+        train_dataset=dataset['train'],
+        eval_dataset=dataset['test'],
         args=training_args,
     )
 

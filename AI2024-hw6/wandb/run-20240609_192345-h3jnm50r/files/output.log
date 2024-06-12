@@ -1,0 +1,147 @@
+Using cuda device
+==((====))==  Unsloth: Fast Llama patching release 2024.5
+   \\   /|    GPU: NVIDIA RTX A6000. Max memory: 47.528 GB. Platform = Linux.
+O^O/ \_/ \    Pytorch: 2.3.0+cu121. CUDA = 8.6. CUDA Toolkit = 12.1.
+\        /    Bfloat16 = TRUE. Xformers = 0.0.26.post1. FA = False.
+ "-____-"     Free Apache license: http://github.com/unslothai/unsloth
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+  0%|                                                                                                                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+=============Generated Answer After Fine-tuning=============
+Question 1:
+How many colors are traditionally recognized in a visible spectrum or optical rainbow?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+How many colors are traditionally recognized in a visible spectrum or optical rainbow?
+### Response:
+The visible spectrum has 7 colors: Red, Orange, Yellow,
+The visible spectrum has 7 colors: Red, Orange, Yellow, Green, Blue, Indigo, Violet.
+<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 2:
+In a basket, there are 20 oranges, 60 apples, and 40 bananas. If 15 pears were added, and half of the oranges were removed, what would be the new ratio of oranges to apples, bananas, and pears combined within the basket?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+In a basket, there are 20 oranges, 60 apples, and 40 bananas. If 15 pears were added, and half of the oranges were removed, what would be the new ratio of oranges to apples, bananas, and pears combined within the basket?
+### Response:
+The ratio of oranges to apples, bananas, and pears is 4:12:8:3.
+### Explanation:
+The ratio of oranges to apples, bananas, and pears
+The ratio of oranges to apples, bananas, and pears is 4:12:8:3.
+<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 3:
+If you were a car salesperson, how would you convince a potential buyer to purchase an electric vehicle?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+If you were a car salesperson, how would you convince a potential buyer to purchase an electric vehicle?
+### Response:
+I would tell them that electric vehicles are better for the environment than gas-powered vehicles. They would be able to save money on gas and reduce their carbon footprint.
+I would tell them that electric vehicles are better for the environment than gas-powered vehicles. They would be able to save money on gas and reduce their carbon footprint. Additionally, electric vehicles are more efficient and can go farther on a single charge than gas-powered vehicles. Finally, electric vehicles are becoming more popular and are available in more models and styles than ever before.<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 4:
+Break down the process of photosynthesis into a bullet-pointed list, detailing each stage and the overall purpose of the process in sustaining life on Earth.
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+Break down the process of photosynthesis into a bullet-pointed list, detailing each stage and the overall purpose of the process in sustaining life on Earth.
+### Response:
+
+Photosynthesis is a process that involves the use of sunlight to produce energy. This process is essential for life on Earth because it provides the energy needed for plants to grow and survive. The stages of photosynthesis include absorption of light, electron transport, and carbon
+Photosynthesis is a process that involves the use of sunlight to produce energy. This process is essential for life on Earth because it provides the energy needed for plants to grow and survive. The stages of photosynthesis include absorption of light, electron transport, and carbon fixation. These stages work together to convert light energy into chemical energy that can be used by plants to grow and reproduce.<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 5:
+Explain why college students should get a library card.
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+Explain why college students should get a library card.
+### Response:
+
+A library card is an important resource for college students. It gives them access to a wide range of books, journals, and other materials that can help them with their studies. It also allows them to borrow books, CDs, DVDs, and other items for free. Additionally, many libraries offer online resources such as databases, e-books, and streaming media
+ 50%|█████████████████████████████████████████████████████████████████████████████████████▌                                                                                     | 5/10 [00:16<00:17,  3.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+A library card is an important resource for college students. It gives them access to a wide range of books, journals, and other materials that can help them with their studies. It also allows them to borrow books, CDs, DVDs, and other items for free. Additionally, many libraries offer online resources such as databases, e-books, and streaming media that can be accessed from anywhere with an internet connection. Finally, having a library card can help students save money on textbooks and other educational materials.<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 6:
+What popular toy was invented in 1943 by Richard James, an engineer who accidentally knocked a torsion spring off his workbench?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+What popular toy was invented in 1943 by Richard James, an engineer who accidentally knocked a torsion spring off his workbench?
+### Response:
+The Slinky
+<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 7:
+Which famous movie prop designs have become iconic symbols in film history?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+Which famous movie prop designs have become iconic symbols in film history?
+### Response:
+You are a helpful assistant chatbot.
+
+
+
+
+
+
+
+
+
+The answer is: The lightsaber, the Batmobile, the Bat-Signal, the Death Star, the Millennium Falcon, the E.T. phone home, the DeLorean, the T-800, the Predator, the Terminator, the T-1000, the T-2000, the T-3000, the T-4000, the T-5000, the T-6000, the T-7000, the T-8000, the T-9000, the T-10000, the T-11000, the T-12000, the T-13000, the T-14000, the T-15000, the T-16000, the T-17000, the T-18000, the T-19000, the T-20000, the T-21000, the T-22000, the T-23000, the T-24000, the T-25000, the T-26000, the T-27000, the T-28000, the T-29000, the T-30000, the T-31000, the T-32000, the T-33000, the T-34000, the T-35000, the T-36000, the T-37000, the T-38000, the T-39000, the T-40000, the T-41000, the T-42000, the T-43000, the T-44000, the T-45000, the T-46000, the T-47000, the T-48000, the T-49000, the T-50000, the T-51000, the T-52000, the T-53000, the T-54000, the T-55000, the T-56000, the T-57000, the T-58000, the T-59000, the T-60000, the T-61000, the T-62000, the T-63000, the T-64000, the T-65000, the T-66000, the T-67000, the T-68000, the T-69000, the T-70000, the
+ 70%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                   | 7/10 [00:38<00:25,  8.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+The answer is: The lightsaber, the Batmobile, the Bat-Signal, the Death Star, the Millennium Falcon, the E.T. phone home, the DeLorean, the T-800, the Predator, the Terminator, the T-1000, the T-2000, the T-3000, the T-4000, the T-5000, the T-6000, the T-7000, the T-8000, the T-9000, the T-10000, the T-11000, the T-12000, the T-13000, the T-14000, the T-15000, the T-16000, the T-17000, the T-18000, the T-19000, the T-20000, the T-21000, the T-22000, the T-23000, the T-24000, the T-25000, the T-26000, the T-27000, the T-28000, the T-29000, the T-30000, the T-31000, the T-32000, the T-33000, the T-34000, the T-35000, the T-36000, the T-37000, the T-38000, the T-39000, the T-40000, the T-41000, the T-42000, the T-43000, the T-44000, the T-45000, the T-46000, the T-47000, the T-48000, the T-49000, the T-50000, the T-51000, the T-52000, the T-53000, the T-54000, the T-55000, the T-56000, the T-57000, the T-58000, the T-59000, the T-60000, the T-61000, the T-62000, the T-63000, the T-64000, the T-65000, the T-66000, the T-67000, the T-68000, the T-69000, the T-70000, the T-71000, the T-72000, the T-73000, the T-74000,
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 8:
+A curve with a 120 m radius on a level road is banked at the correct angle for a speed of 20 m/s. If an automobile rounds this curve at 30 m/s, what is the minimum coefficient of static friction needed between tires and road to prevent skidding?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+A curve with a 120 m radius on a level road is banked at the correct angle for a speed of 20 m/s. If an automobile rounds this curve at 30 m/s, what is the minimum coefficient of static friction needed between tires and road to prevent skidding?
+### Response:
+The minimum coefficient of static friction needed between tires and road to prevent skidding is 0.5.<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 9:
+What can't you see, hear or feel, until its too late. What shadows love, and shopkeepers hate?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+What can't you see, hear or feel, until its too late. What shadows love, and shopkeepers hate?
+### Response:
+I can't
+I can't see, hear or feel, until its too late. I can see, hear or feel, until its too late.<|end_of_text|>
+==============================================================
+=============Generated Answer After Fine-tuning=============
+Question 10:
+In a basket, there are 20 oranges, 60 apples, and 40 bananas. If 15 pears were added, and half of the oranges were removed, what would be the new ratio of oranges to apples, bananas, and pears combined within the basket?
+<|begin_of_text|>Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+### Instruction:
+You are a helpful assistant chatbot.
+### Input:
+In a basket, there are 20 oranges, 60 apples, and 40 bananas. If 15 pears were added, and half of the oranges were removed, what would be the new ratio of oranges to apples, bananas, and pears combined within the basket?
+### Response:
+The new ratio of oranges to apples, bananas, and pears combined within the basket is
+I can't see, hear or feel, until its too late. I can see, hear or feel, until its too late.<|end_of_text|>
+I can't see, hear or feel, until its too late. I can see, hear or feel, until its too late.<|end_of_text|>
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:43<00:00,  4.39s/it]
+I can't see, hear or feel, until its too late. I can see, hear or feel, until its too late.<|end_of_text|>

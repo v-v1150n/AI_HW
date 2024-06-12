@@ -1,0 +1,347 @@
+2024-06-06 19:54:48,546 INFO    StreamThr :254612 [internal.py:wandb_internal():85] W&B internal server running at pid: 254612, started at: 2024-06-06 19:54:48.545912
+2024-06-06 19:54:48,547 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status
+2024-06-06 19:54:48,548 INFO    WriterThread:254612 [datastore.py:open_for_write():87] open: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/run-4udvr0b1.wandb
+2024-06-06 19:54:48,548 DEBUG   SenderThread:254612 [sender.py:send():378] send: header
+2024-06-06 19:54:48,548 DEBUG   SenderThread:254612 [sender.py:send():378] send: run
+2024-06-06 19:54:49,010 INFO    SenderThread:254612 [dir_watcher.py:__init__():211] watching files in: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files
+2024-06-06 19:54:49,010 INFO    SenderThread:254612 [sender.py:_start_run_threads():1123] run started: 4udvr0b1 with start time 1717674888.545968
+2024-06-06 19:54:49,012 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: check_version
+2024-06-06 19:54:49,013 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: check_version
+2024-06-06 19:54:49,173 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: run_start
+2024-06-06 19:54:49,177 DEBUG   HandlerThread:254612 [system_info.py:__init__():26] System info init
+2024-06-06 19:54:49,177 DEBUG   HandlerThread:254612 [system_info.py:__init__():41] System info init done
+2024-06-06 19:54:49,177 INFO    HandlerThread:254612 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:54:49,177 INFO    SystemMonitor:254612 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:54:49,177 INFO    HandlerThread:254612 [system_monitor.py:probe():214] Collecting system info
+2024-06-06 19:54:49,178 INFO    SystemMonitor:254612 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:54:49,178 INFO    SystemMonitor:254612 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:54:49,179 INFO    SystemMonitor:254612 [interfaces.py:start():188] Started gpu monitoring
+2024-06-06 19:54:49,180 INFO    SystemMonitor:254612 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:54:49,180 INFO    SystemMonitor:254612 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:54:49,188 DEBUG   HandlerThread:254612 [system_info.py:probe():150] Probing system
+2024-06-06 19:54:49,189 DEBUG   HandlerThread:254612 [gitlib.py:_init_repo():56] git repository is invalid
+2024-06-06 19:54:49,189 DEBUG   HandlerThread:254612 [system_info.py:probe():198] Probing system done
+2024-06-06 19:54:49,189 DEBUG   HandlerThread:254612 [system_monitor.py:probe():223] {'os': 'Linux-6.1.0-1026-oem-x86_64-with-glibc2.35', 'python': '3.10.14', 'heartbeatAt': '2024-06-06T11:54:49.188362', 'startedAt': '2024-06-06T11:54:48.543583', 'docker': None, 'cuda': None, 'args': ('--model_name', 'unsloth/mistral-7b-v0.3-bnb-4bit', '--inference_base_model', '--wandb_token', 'e3fff50ea094a01b2517ed5ab652f25906a498f0'), 'state': 'running', 'program': '/home/vv1150n/python_file/AI2024-hw6/main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'cmdm-196', 'username': 'vv1150n', 'executable': '/home/vv1150n/miniconda3/envs/ai_hw6/bin/python', 'cpu_count': 14, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2144.3147, 'min': 800.0, 'max': 4480.0}, 'cpu_freq_per_core': [{'current': 4701.707, 'min': 800.0, 'max': 5000.0}, {'current': 800.0, 'min': 800.0, 'max': 5000.0}, {'current': 4686.53, 'min': 800.0, 'max': 5000.0}, {'current': 800.0, 'min': 800.0, 'max': 5000.0}, {'current': 4675.595, 'min': 800.0, 'max': 5000.0}, {'current': 800.0, 'min': 800.0, 'max': 5000.0}, {'current': 4179.845, 'min': 800.0, 'max': 5000.0}, {'current': 800.0, 'min': 800.0, 'max': 5000.0}, {'current': 4698.973, 'min': 800.0, 'max': 5000.0}, {'current': 4700.0, 'min': 800.0, 'max': 5000.0}, {'current': 4640.812, 'min': 800.0, 'max': 5000.0}, {'current': 2561.528, 'min': 800.0, 'max': 5000.0}, {'current': 2665.577, 'min': 800.0, 'max': 3700.0}, {'current': 2114.244, 'min': 800.0, 'max': 3700.0}, {'current': 2382.054, 'min': 800.0, 'max': 3700.0}, {'current': 800.0, 'min': 800.0, 'max': 3700.0}, {'current': 800.0, 'min': 800.0, 'max': 3700.0}, {'current': 800.0, 'min': 800.0, 'max': 3700.0}, {'current': 3032.874, 'min': 800.0, 'max': 3700.0}, {'current': 800.0, 'min': 800.0, 'max': 3700.0}], 'disk': {'/': {'total': 455.7536849975586, 'used': 198.83881759643555}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 15.308425903320312}}
+2024-06-06 19:54:49,189 INFO    HandlerThread:254612 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-06 19:54:49,189 INFO    HandlerThread:254612 [system_monitor.py:probe():227] Publishing system info
+2024-06-06 19:54:49,189 DEBUG   HandlerThread:254612 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-06-06 19:54:50,010 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/conda-environment.yaml
+2024-06-06 19:54:50,155 DEBUG   HandlerThread:254612 [system_info.py:_save_conda():222] Saving conda packages done
+2024-06-06 19:54:50,156 INFO    HandlerThread:254612 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-06 19:54:50,157 DEBUG   SenderThread:254612 [sender.py:send():378] send: files
+2024-06-06 19:54:50,157 INFO    SenderThread:254612 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-06-06 19:54:50,204 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-06 19:54:50,205 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:54:50,205 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: python_packages
+2024-06-06 19:54:50,205 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:54:50,486 DEBUG   SenderThread:254612 [sender.py:send():378] send: telemetry
+2024-06-06 19:54:51,010 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/conda-environment.yaml
+2024-06-06 19:54:51,010 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/wandb-metadata.json
+2024-06-06 19:54:51,010 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:54:51,010 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/requirements.txt
+2024-06-06 19:54:51,722 INFO    wandb-upload_0:254612 [upload_job.py:push():130] Uploaded file /tmp/tmptbxw6vp_wandb/ncdtjx73-wandb-metadata.json
+2024-06-06 19:54:53,011 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:54:54,488 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:00,465 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:01,012 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:02,013 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:03,013 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:05,013 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:05,205 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:55:05,206 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:55:05,490 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:07,014 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:09,014 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:10,523 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:11,015 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:13,015 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:15,016 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:15,550 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:17,016 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:19,016 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:20,205 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:55:20,206 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:55:20,576 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:21,017 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/config.yaml
+2024-06-06 19:55:21,017 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:22,017 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:23,017 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:25,018 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:25,781 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:27,018 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:29,019 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:30,812 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:31,019 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:33,020 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:35,020 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:35,205 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:55:35,205 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:55:35,822 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:37,021 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:39,021 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:40,021 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:40,841 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:41,022 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:43,022 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:45,022 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:45,842 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:47,023 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:49,023 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:49,180 DEBUG   SystemMonitor:254612 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:49,181 DEBUG   SenderThread:254612 [sender.py:send():378] send: stats
+2024-06-06 19:55:50,205 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:55:50,206 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:55:50,850 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:51,024 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:53,024 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:55,025 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:55,862 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:57,025 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:58,025 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:55:59,026 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:00,897 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:01,026 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:03,026 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:05,027 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:05,206 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:56:05,206 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:56:05,901 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:07,027 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:08,028 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:09,028 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:10,917 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:11,028 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:13,029 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:15,029 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:15,937 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:17,030 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:19,030 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:19,181 DEBUG   SenderThread:254612 [sender.py:send():378] send: stats
+2024-06-06 19:56:20,206 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:56:20,206 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:56:20,950 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:21,030 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:23,031 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:25,031 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:25,953 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:26,032 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:27,032 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:29,032 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:30,973 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:31,033 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:33,033 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:35,034 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:35,206 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:56:35,206 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:56:35,976 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:37,034 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:39,034 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:40,997 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:41,035 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:43,035 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:44,036 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:45,036 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:46,018 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:47,036 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:49,037 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:49,182 DEBUG   SenderThread:254612 [sender.py:send():378] send: stats
+2024-06-06 19:56:50,206 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:56:50,206 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:56:51,032 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:51,037 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:53,038 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:55,038 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:56,054 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:57,039 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:56:59,039 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:00,040 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:01,040 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:01,088 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:03,040 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:05,041 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:05,207 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:57:05,207 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:57:06,099 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:07,041 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:09,042 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:11,042 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:11,104 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:13,043 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:15,043 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:16,130 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:17,044 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:18,044 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:19,044 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:19,182 DEBUG   SenderThread:254612 [sender.py:send():378] send: stats
+2024-06-06 19:57:20,206 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:57:20,207 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:57:21,045 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:21,134 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:23,045 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:25,045 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:26,154 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:27,046 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:29,046 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:31,047 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:31,162 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:33,048 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:35,048 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:35,207 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:57:35,207 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:57:36,048 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:36,196 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:37,048 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:39,049 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:41,049 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:41,201 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:43,050 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:45,050 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:46,205 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:47,051 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:49,051 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:49,183 DEBUG   SenderThread:254612 [sender.py:send():378] send: stats
+2024-06-06 19:57:50,207 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:57:50,207 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:57:51,052 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:51,219 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:52,664 DEBUG   SenderThread:254612 [sender.py:send():378] send: exit
+2024-06-06 19:57:52,664 INFO    SenderThread:254612 [sender.py:send_exit():585] handling exit code: 0
+2024-06-06 19:57:52,665 INFO    SenderThread:254612 [sender.py:send_exit():587] handling runtime: 183
+2024-06-06 19:57:52,666 INFO    SenderThread:254612 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:57:52,666 INFO    SenderThread:254612 [sender.py:send_exit():593] send defer
+2024-06-06 19:57:52,666 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:52,666 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-06 19:57:52,666 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:52,667 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-06-06 19:57:52,667 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 1
+2024-06-06 19:57:52,667 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:52,667 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-06 19:57:52,667 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:52,667 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-06-06 19:57:52,667 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 2
+2024-06-06 19:57:52,667 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:52,667 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-06 19:57:52,667 INFO    HandlerThread:254612 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:57:52,667 DEBUG   SystemMonitor:254612 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:57:52,667 DEBUG   SystemMonitor:254612 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:57:52,669 INFO    HandlerThread:254612 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:57:52,669 INFO    HandlerThread:254612 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:57:52,691 INFO    HandlerThread:254612 [interfaces.py:finish():200] Joined gpu monitor
+2024-06-06 19:57:52,691 INFO    HandlerThread:254612 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:57:52,691 INFO    HandlerThread:254612 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:57:52,692 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:52,692 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-06-06 19:57:52,692 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 3
+2024-06-06 19:57:52,692 DEBUG   SenderThread:254612 [sender.py:send():378] send: stats
+2024-06-06 19:57:52,692 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:52,692 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-06 19:57:52,692 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:52,692 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-06-06 19:57:52,692 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 4
+2024-06-06 19:57:52,693 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:52,693 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-06 19:57:52,693 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:52,693 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-06-06 19:57:52,693 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 5
+2024-06-06 19:57:52,693 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:52,693 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-06 19:57:52,693 DEBUG   SenderThread:254612 [sender.py:send():378] send: summary
+2024-06-06 19:57:52,694 INFO    SenderThread:254612 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:57:52,694 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:52,694 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-06-06 19:57:52,694 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 6
+2024-06-06 19:57:52,694 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:52,694 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-06 19:57:52,694 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:52,694 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-06-06 19:57:52,694 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 7
+2024-06-06 19:57:52,694 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:52,694 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:52,694 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-06 19:57:52,694 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:52,694 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-06-06 19:57:53,052 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:53,052 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/wandb-summary.json
+2024-06-06 19:57:53,664 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-06 19:57:54,052 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:55,053 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:55,630 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 8
+2024-06-06 19:57:55,630 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: poll_exit
+2024-06-06 19:57:55,631 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:55,631 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-06 19:57:55,631 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:55,631 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-06-06 19:57:55,631 INFO    SenderThread:254612 [job_builder.py:build():432] Attempting to build job artifact
+2024-06-06 19:57:55,632 INFO    SenderThread:254612 [job_builder.py:_get_source_type():576] no source found
+2024-06-06 19:57:55,632 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 9
+2024-06-06 19:57:55,632 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:55,633 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-06 19:57:55,633 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:55,633 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-06-06 19:57:55,633 INFO    SenderThread:254612 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-06 19:57:55,665 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-06 19:57:56,053 INFO    Thread-12 :254612 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:56,053 INFO    SenderThread:254612 [dir_watcher.py:finish():388] scan: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files
+2024-06-06 19:57:56,054 INFO    SenderThread:254612 [dir_watcher.py:finish():402] scan save: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/wandb-summary.json wandb-summary.json
+2024-06-06 19:57:56,054 INFO    SenderThread:254612 [dir_watcher.py:finish():402] scan save: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/config.yaml config.yaml
+2024-06-06 19:57:56,054 INFO    SenderThread:254612 [dir_watcher.py:finish():402] scan save: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/requirements.txt requirements.txt
+2024-06-06 19:57:56,054 INFO    SenderThread:254612 [dir_watcher.py:finish():402] scan save: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log output.log
+2024-06-06 19:57:56,054 INFO    SenderThread:254612 [dir_watcher.py:finish():402] scan save: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/conda-environment.yaml conda-environment.yaml
+2024-06-06 19:57:56,054 INFO    SenderThread:254612 [dir_watcher.py:finish():402] scan save: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/wandb-metadata.json wandb-metadata.json
+2024-06-06 19:57:56,054 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 10
+2024-06-06 19:57:56,055 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: poll_exit
+2024-06-06 19:57:56,058 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:56,059 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-06 19:57:56,059 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:56,060 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-06-06 19:57:56,060 INFO    SenderThread:254612 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-06 19:57:56,524 INFO    wandb-upload_4:254612 [upload_job.py:push():130] Uploaded file /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/conda-environment.yaml
+2024-06-06 19:57:56,532 INFO    wandb-upload_0:254612 [upload_job.py:push():130] Uploaded file /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/config.yaml
+2024-06-06 19:57:56,536 INFO    wandb-upload_1:254612 [upload_job.py:push():130] Uploaded file /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/wandb-summary.json
+2024-06-06 19:57:56,550 INFO    wandb-upload_2:254612 [upload_job.py:push():130] Uploaded file /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/requirements.txt
+2024-06-06 19:57:56,665 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-06 19:57:56,666 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: poll_exit
+2024-06-06 19:57:56,747 INFO    wandb-upload_3:254612 [upload_job.py:push():130] Uploaded file /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/files/output.log
+2024-06-06 19:57:56,948 INFO    Thread-11 (_thread_body):254612 [sender.py:transition_state():613] send defer: 11
+2024-06-06 19:57:56,948 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:56,948 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-06 19:57:56,948 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:56,948 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-06-06 19:57:56,949 INFO    SenderThread:254612 [file_pusher.py:join():175] waiting for file pusher
+2024-06-06 19:57:56,949 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 12
+2024-06-06 19:57:56,949 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:56,949 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-06 19:57:56,949 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:56,949 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-06-06 19:57:56,949 INFO    SenderThread:254612 [file_stream.py:finish():601] file stream finish called
+2024-06-06 19:57:57,532 INFO    SenderThread:254612 [file_stream.py:finish():605] file stream finish is done
+2024-06-06 19:57:57,532 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 13
+2024-06-06 19:57:57,533 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:57,533 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-06 19:57:57,533 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:57,533 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-06-06 19:57:57,533 INFO    SenderThread:254612 [sender.py:transition_state():613] send defer: 14
+2024-06-06 19:57:57,533 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:57:57,533 INFO    HandlerThread:254612 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-06 19:57:57,534 DEBUG   SenderThread:254612 [sender.py:send():378] send: final
+2024-06-06 19:57:57,534 DEBUG   SenderThread:254612 [sender.py:send():378] send: footer
+2024-06-06 19:57:57,534 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:57:57,534 INFO    SenderThread:254612 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-06-06 19:57:57,534 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-06 19:57:57,534 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: poll_exit
+2024-06-06 19:57:57,535 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-06 19:57:57,535 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: server_info
+2024-06-06 19:57:57,535 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-06 19:57:57,535 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-06 19:57:57,535 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-06 19:57:57,535 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: poll_exit
+2024-06-06 19:57:57,535 DEBUG   SenderThread:254612 [sender.py:send_request():405] send_request: server_info
+2024-06-06 19:57:57,712 INFO    MainThread:254612 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-06-06 19:57:57,712 INFO    MainThread:254612 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-06-06 19:57:57,712 INFO    MainThread:254612 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-06-06 19:57:57,713 DEBUG   HandlerThread:254612 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-06 19:57:57,713 INFO    HandlerThread:254612 [handler.py:finish():882] shutting down handler
+2024-06-06 19:57:58,535 INFO    WriterThread:254612 [datastore.py:close():296] close: /home/vv1150n/python_file/AI2024-hw6/wandb/run-20240606_195448-4udvr0b1/run-4udvr0b1.wandb
+2024-06-06 19:57:58,712 INFO    SenderThread:254612 [sender.py:finish():1545] shutting down sender
+2024-06-06 19:57:58,712 INFO    SenderThread:254612 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-06 19:57:58,712 INFO    SenderThread:254612 [file_pusher.py:join():175] waiting for file pusher

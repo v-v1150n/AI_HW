@@ -1,0 +1,23 @@
+
+Using cuda device
+Downloading readme: 100%|███████████████████████| 196/196 [00:00<00:00, 426kB/s]
+Downloading data:  29%|█████▊              | 10.5M/36.3M [00:00<00:01, 21.0MB/s]
+==((====))==  Unsloth: Fast Llama patching release 2024.5
+   \\   /|    GPU: NVIDIA RTX A6000. Max memory: 47.528 GB. Platform = Linux.
+O^O/ \_/ \    Pytorch: 2.3.0+cu121. CUDA = 8.6. CUDA Toolkit = 12.1.
+\        /    Bfloat16 = TRUE. Xformers = 0.0.26.post1. FA = False.
+Downloading data: 100%|████████████████████| 36.3M/36.3M [00:00<00:00, 38.4MB/s]
+Generating train split: 100%|██| 12859/12859 [00:00<00:00, 159816.51 examples/s]
+config.json: 100%|█████████████████████████| 1.20k/1.20k [00:00<00:00, 2.51MB/s]
+Traceback (most recent call last):
+  File "/home/vv1150n/python_file/AI2024-hw6/main.py", line 80, in <module>
+    DPO.DPO_train(args, output_dir)
+  File "/home/vv1150n/python_file/AI2024-hw6/DPO.py", line 39, in DPO_train
+    model = FastLanguageModel.from_pretrained(model_name=args.model_name, torch_dtype=torch_dtype).to(device)
+  File "/home/vv1150n/miniconda3/envs/ai_hw6/lib/python3.10/site-packages/unsloth/models/loader.py", line 142, in from_pretrained
+    model, tokenizer = dispatch_model.from_pretrained(
+  File "/home/vv1150n/miniconda3/envs/ai_hw6/lib/python3.10/site-packages/unsloth/models/llama.py", line 1135, in from_pretrained
+    raise error
+  File "/home/vv1150n/miniconda3/envs/ai_hw6/lib/python3.10/site-packages/unsloth/models/llama.py", line 1106, in from_pretrained
+    model = AutoModelForCausalLM.from_pretrained(
+TypeError: transformers.models.auto.auto_factory._BaseAutoModelClass.from_pretrained() got multiple values for keyword argument 'torch_dtype'

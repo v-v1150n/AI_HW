@@ -10,10 +10,10 @@ from datasets import load_dataset
 from unsloth import FastLanguageModel
 from unsloth import is_bfloat16_supported
 from transformers import TrainingArguments, TextStreamer
-
-
+# max_seq_length = 2048 # Supports RoPE Scaling interally, so choose any!
 
 def DPO_train(args, output_dir):
+    #初始化WandB（Weights and Biases）進行實驗追踪
     wandb.login(key=args.wandb_token)
     wandb.init(project="hw6_rlhf",
                name=f"{args.exp_name}_{args.model_name.split('/')[1]}")
@@ -36,11 +36,41 @@ def DPO_train(args, output_dir):
 
     # Model
     # model, tokenizer = FastLanguageModel.from_pretrained(model_name=args.model_name,...)
-    utils.YOUR_CODE_HERE
+    model, tokenizer = FastLanguageModel.from_pretrained(
+        # model_name = 'unsloth/mistral-7b-v0.3-bnb-4bit',
+        # model_name = 'unsloth/llama-3-8b-bnb-4bit',
+        model_name = "unsloth/llama-3-8b-Instruct-bnb-4bit",
+        #max_seq_length = max_seq_length,
+        max_seq_length = 4096, #0609-1
+        # dtype = None,
+         dtype = torch.float16, #0609-2
+        load_in_4bit = True,
+    )
+
+    #max_seq_length =2048 過長的序列會增加計算成本，但過短的序列可能會丟失重要的上下文信息。
+    #dtype = torch.float16 使用浮點16位或 BF16 來提高計算效率並減少內存使用。
 
     # Perform model patching and add fast LoRA weights
     # model = FastLanguageModel.get_peft_model(model,...)
-    utils.YOUR_CODE_HERE
+    model = FastLanguageModel.get_peft_model(
+        model,
+        r = 64,
+        target_modules = ["q_proj", "k_proj", "v_proj", "o_proj",
+                        "gate_proj", "up_proj", "down_proj",],
+        lora_alpha = 64,
+        # lora_dropout = 0, # Supports any, but = 0 is optimized
+        lora_dropout = 0.1, #0609-1
+        bias = "none",    # Supports any, but = "none" is optimized
+        # [NEW] "unsloth" uses 30% less VRAM, fits 2x larger batch sizes!
+        use_gradient_checkpointing = "unsloth", # True or "unsloth" for very long context
+        random_state = 3407,
+        # max_seq_length = max_seq_length,
+        max_seq_length = 4096 #0609-1
+    )
+    #r = 64 調高可以提升模型的靈活性，讓模型能夠捕捉到更細微的特徵，但也會使訓練和推理變得更慢。
+    #lora_alpha=64 較高的 lora_alpha 會增加 LoRA 層的影響，從而可能提升性能，但也會使模型更加敏感於過擬合。
+    #lora_dropout = 0.1 如果出現過擬合問題，可以考慮增大 lora_dropout 的值，例如設為 0.1 或 0.2。
+
 
     # Training arguments
     training_args = TrainingArguments(
@@ -71,8 +101,8 @@ def DPO_train(args, output_dir):
     dpo_trainer = DPOTrainer(
         model=model,
         tokenizer=tokenizer,
-        train_dataset=utils.YOUR_CODE_HERE,
-        eval_dataset=utils.YOUR_CODE_HERE,
+        train_dataset=dataset['train'],
+        eval_dataset=dataset['test'],
         args=training_args,
         beta=args.beta,
         max_length=args.max_length,
@@ -127,3 +157,5 @@ def DPO_train(args, output_dir):
     del dpo_trainer, model
     gc.collect()
     torch.cuda.empty_cache()
+
+
